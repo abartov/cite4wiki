@@ -1,0 +1,19 @@
+<!-- This code is subject to the GNU Lesser Public License, Version 3. -->
+<!-- WARNING! Do NOT try to use a character entity code like &amp; or &ndash; in any of these or it causes XML parse errors - can't use an entity inside an entity. -->
+<!-- Most of this is not used yet. There are no FAQ window, About window, etc. -->
+<!-- As of 1.4, repurposing this as an "About" button and window, since the real "About" code is nonfunctional, and there are not actual "Options" to use here. -->
+<!ENTITY dialog.title               "About Cite4Wiki">
+<!--ENTITY dialog.title               "Cite4Wiki Preferences"-->
+<!ENTITY faq.label                  "Frequently Asked Questions">
+<!ENTITY faq.accesskey              "F">
+<!ENTITY faq.url                    "http://en.wikipedia.org/wiki/Wikipedia:Cite4Wiki">
+<!ENTITY filterdoc.url              "http://en.wikipedia.org/wiki/Wikipedia:Cite4Wiki">
+<!ENTITY about.label                "About Cite4Wiki">
+<!ENTITY about.accesskey            "B">
+<!-- Display of this can be enabled in ../../content/options.xul by having (presently non-existent) code change a line to read `<description id="disabledWarning" hidden="false">`, so that a warning appears if you disable the add-on but keep using it before restarting (add-on continues to work), and there is no way to access its menu and citation code window at all if you disable it and restart the browser. -->
+<!ENTITY disabled.warning           "Cite4Wiki is disabled.">
+<!-- Description that appears in the "Options" window available from the "Options" button on the "Add-ons" tool window. -->
+<!-- This is done by chrome/content/options.xul. -->
+<!ENTITY description                "Cite4Wiki is a citation generating tool for English-language Wikipedia - just right-click to get a wikicode source citation for the current page.  (Developed 2008-2011 by:  Stanton McCandlish [SMcCandlish], Unit 5, Jonathan E. Hochman [Jehochman], Diego Cadogan [Manuar], et al.)">
+<!ENTITY apply.label                "Apply">
+<!ENTITY apply.accesskey            "P">

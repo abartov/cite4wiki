@@ -1,0 +1,8 @@
+<!-- This code is subject to the GNU Lesser Public License, Version 3. -->
+<!ENTITY notloaded.label        "Not loaded">
+<!ENTITY notloaded.tooltip      "Cite4Wiki component couldn't be loaded; maybe it didn't install properly.">
+<!ENTITY status.tooltip         "Status:">
+<!ENTITY menuitem.label         "Cite4Wiki">
+<!ENTITY menuitem.accesskey     "K">
+<!ENTITY settings.label         "Preferences">
+<!ENTITY settings.accesskey     "F">

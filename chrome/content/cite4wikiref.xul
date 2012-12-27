@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- This code is subject to the GNU Lesser Public License, Version 3. -->
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://googtap/skin/window.css" type="text/css"?>
+
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<div align="center" style="background-color:#d0e0d0; border: 1px #000000;">
+<!-- The "title=" below is technically the title of the citation code window you get after using the context menu. It is not shown, however. -->
+<!-- And do NOT use character entity codes here, or the entire window will barf with an XML parse error. -->
+<window id="cite4wiki" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="Cite4Wiki"
+        align="center"
+        persist="screenX screenY width height sizemode"
+        onload="initialize();">
+        <script src="chrome://cite4wiki/content/cite4wiki.js" type="application/x-javascript" />
+<vbox flex="2">
+<!-- The "h2" text below is the text that appears at the top of the citation code window you get after using the context menu. -->
+<!-- Character entity codes are NOT okay here, but should be. No Unicode either. Both cause XML parse errors. -->
+<div align="center" style="background-color:#e0f0e0; border: 1px #000000; font-weight:bold; padding-left:5px;"><h2>Cite4Wik<span style="letter-spacing:0.5em;">i</span>  <span style="font-weight:normal;">citation wikicode:</span></h2></div>
+<textbox id="tbox" align="center" value=" " multiline="true" cols="52" rows="12" disabled="true" readonly="true" clickselectsAll="true" />
+<script>
+        var txt = window.arguments[0];
+        var d = document.getElementById("tbox"); 
+        d.setAttribute("value", txt);
+</script>
+<hbox align="center" flex="1">
+<button label="Copy to clipboard and close" onclick="copy_clip(d.getAttribute('value').toString()); document.persist('cite4wiki', 'screenX');document.persist('cite4wiki', 'screenY');document.persist('cite4wiki','sizemode'); window.close();" />
+<button label="Copy to clipboard" onclick="copy_clip(d.getAttribute('value').toString());" />
+<button label="Close" onclick="document.persist('cite4wiki', 'screenX'); document.persist('cite4wiki', 'screenY'); document.persist('cite4wiki','sizemode'); window.close();" />
+</hbox>
+</vbox>
+</window></div>

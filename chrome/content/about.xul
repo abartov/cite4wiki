@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This code is subject to the GNU Lesser Public License, Version 3. -->
+<!-- THIS ALL APPEARS TO BE DEAD CODE, AS THERE IS NO "ABOUT" WINDOW AVAILABLE ANY WAY, ANYWHERE. -->
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window class="dialog"
+	title="Cite4Wiki - About"
+	orient="vertical"
+	autostretch="always"
+	onload="sizeToContent()"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<groupbox align="center" orient="horizontal">
+<vbox>
+  <text value="Cite4Wiki" style="font-weight: bold; font-size: x-large;"/>
+  <text value="ver. 1.4"/>
+  <text value=".\r"/>
+  <text value="2011-01-18"/>
+  <text value=".\r"/>
+  <text value="\r"/>
+  <separator class="thin"/>
+  <text value="Original Java implementation by: " style="font-weight: bold;"/>
+  <text value="Jonathan E. Hochman (Jehochman)"
+	      class="url"
+				onclick="window.open('http://en.wikipedia.org/wiki/User:Jehochman'); window.close();"/>
+  <text value=" and "/>
+  <text value="Diego Cadogan (Manuar)"/>
+  <text value="\r"/>
+  <text value="JavaScript re-do by: " style="font-weight: bold;"/>
+  <text value="Unit 5"
+	      class="url"
+				onclick="window.open('http://en.wikipedia.org/wiki/User:Unit 5'); window.close();"/>
+  <text value="\r"/>
+	<text value="Expanded by: " style="font-weight: bold;"/>
+  <text value="Stanton McCandlish (SMcCandlish)"
+	      class="url"
+				onclick="window.open('http://en.wikipedia.org/wiki/User:SMcCandlish'); window.close();"/>
+  <text value="\r"/>
+  <text value="Contributors: " style="font-weight: bold;"/>
+  <text value="Yojimbo Doodah, Ratel, plus stock code from CodeBase.nl and Mozilla.org"/>
+  <separator class="thin"/>
+  <text value="Home Page:" style="font-weight: bold;"/>
+  <text value="http://wikipedia.org/wiki/Wikipedia:Cite4Wiki"
+		    class="url"
+        onclick="window.open('http://en.wikipedia.org/wiki/Wikipedia:Cite4Wiki'); window.close();"/>
+</vbox>
+<spring flex="1"/>
+<image src="chrome://cite4wiki/skin/classic/cite4wiki4M.png"/>
+</groupbox>
+
+<hbox>
+ <spacer flex="1"/>
+ <button label="Close" oncommand="window.close();"/>
+</hbox>
+
+</window>

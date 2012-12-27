@@ -1,0 +1,10 @@
+<!-- This code is subject to the GNU Lesser Public License, Version 3. -->
+<!-- THIS ALL APPEARS TO BE DEAD CODE, AS THERE IS NO "ABOUT" WINDOW AVAILABLE ANY WAY, ANYWHERE. -->
+<!-- Using the "Options" buttons instead, for now, since it DOES show up, but there are not options there, just "About" material. -->
+<!ENTITY dialog.title       "About Cite4Wiki">
+<!ENTITY caption.title      "Cite4Wiki">
+<!ENTITY version.title      "Version">
+<!ENTITY description        "Cite4Wiki allows you to generate a wikicode reference citation from the page you are currently viewing, for use in sourcing a Wikipedia article.">
+<!ENTITY homepage.label     "Cite4Wiki homepage:">
+<!ENTITY author.label       "Authors:">
+<!ENTITY contributors.label "Contributors:">

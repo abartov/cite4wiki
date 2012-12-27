@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!-- This code is subject to the GNU Lesser Public License, Version 3. -->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+<!--Seems to be the ID by which the browser separates this from other add-ons.-->
+<!--Addons.mozilla.org also uses it as a unique ID.-->
+	<em:id>cite4wiki@peeps.wiki</em:id>
+<!--Version number used in the "Add-ons" tool window.-->
+	<em:version>1.4</em:version>
+	<em:type>2</em:type>
+<!--App name used in the "Add-ons" tool window.-->
+	<em:name>Cite4Wiki</em:name>
+<!--Description used in the "Add-ons" tool window.-->
+	<em:description>Citation generating tool for English-language Wikipedia (right-click to cite a source in wikicode for the current page).</em:description>
+<!--Credits that don't actually seem to be loaded by anything anywhere, but should be available somehow.-->
+	<em:creator>Stanton McCandlish (SMcCandlish), Unit 5, Jonathan E. Hochman (Jehochman), Diego Cadogan (Manuar)</em:creator>
+	<em:contributor>Ratel</em:contributor>
+	<em:contributor>Yojimbo Doodah</em:contributor>
+	<em:contributor>CodeBase.nl (stock code)</em:contributor>
+	<em:contributor>Mozilla.org (stock code)</em:contributor>
+	<em:homepageURL>http://en.wikipedia.org/wiki/Wikipedia:Cite4Wiki</em:homepageURL>
+<!--Window that doesn't actually seem to be loaded by anything anywhere, but should be available somehow.-->
+	<em:aboutURL>chrome://cite4wiki/content/about.xul</em:aboutURL>
+<!--"Options" button on the "Add-ons" tool window calls the following page:-->
+	<em:optionsURL>chrome://cite4wiki/content/options.xul</em:optionsURL>
+<!--Icon used in the "Add-ons" tool window.-->
+  <em:iconURL>chrome://cite4wiki/skin/Cite4Wiki_big_icon.png</em:iconURL> 
+<!--Firefox-->
+	<em:targetApplication>
+		<Description>
+			<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+			<em:minVersion>1.0+</em:minVersion>
+			<em:maxVersion>4.0.*</em:maxVersion>
+		</Description>
+	</em:targetApplication>
+<!--Sea Monkey-->
+<!--Darn. Cite4Wiki 1.4's method of modifying the context menus is NOT compatible with SeaMonkey as of Jan. 2011. -->
+<!--
+	<em:targetApplication>
+		<Description>
+			<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+			<em:minVersion>2.0a</em:minVersion>
+			<em:maxVersion>2.1b2</em:maxVersion>
+		</Description>
+	</em:targetApplication>
+-->
+<!--Firefox Mobile (Fennec)-->
+<!--In theory this should work, but only a) with a clipboard add-on, or b) after Firefox Mobile itself does clipboard stuff internally. -->
+	<em:targetApplication>
+		<Description>
+			<em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
+			<em:minVersion>4.0b1pre</em:minVersion>
+			<em:maxVersion>4.0b4</em:maxVersion>
+		</Description>
+	</em:targetApplication>
+	</Description>
+</RDF>

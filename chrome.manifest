@@ -1,0 +1,6 @@
+content  cite4wiki         chrome/content/
+content  cite4wiki         chrome/content/ contentaccessible=yes
+locale   cite4wiki  en-US  chrome/locale/en-US/
+skin		cite4wiki	 classic/1.0 chrome/skin/
+overlay  chrome://browser/content/browser.xul chrome://cite4wiki/content/browser.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://cite4wiki/skin/cite4wiki-skin.css
