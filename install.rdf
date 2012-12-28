@@ -7,7 +7,7 @@
 <!--Addons.mozilla.org also uses it as a unique ID.-->
 	<em:id>cite4wiki@peeps.wiki</em:id>
 <!--Version number used in the "Add-ons" tool window.-->
-	<em:version>1.4</em:version>
+	<em:version>1.5</em:version>
 	<em:type>2</em:type>
 <!--App name used in the "Add-ons" tool window.-->
 	<em:name>Cite4Wiki</em:name>
