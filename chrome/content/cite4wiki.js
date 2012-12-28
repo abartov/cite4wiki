@@ -395,7 +395,7 @@ function generate(dateStyle) {
 function copy_clip(wikicode) {
 /* This code was borrored from the codebase.nl free software site (defunct). */
   // Enable a privilege:
-  netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
+  // obsolete // netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
   // Open clipboard interface:
   var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
   if (!clip) { return; }
